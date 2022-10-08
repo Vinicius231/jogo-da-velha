@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="fundo">
+      <div class="menu">
+        <h1 class="classificacao"></h1>
+        <button class="recomecar" onclick="recomecar()">Jogar Novamente</button>
+      </div>
+    </main>
+    <section class="cima">
+      <span class="primeiro" onclick="primeira()" id="vazio"></span>
+      <span class="segundo" onclick="segunda()" id="vazio"></span>
+      <span class="terceiro" onclick="terceira()" id="vazio"></span>
+    </section>
+    <section class="meio">
+      <span class="quarto" onclick="quarta()" id="vazio"></span>
+      <span class="quinto" onclick="quinta()" id="vazio"></span>
+      <span class="sexto" onclick="sexta()" id="vazio"></span>
+    </section>
+    <section class="baixo">
+      <span class="setimo" onclick="setima()" id="vazio"></span>
+      <span class="oitavo" onclick="oitava()" id="vazio"></span>
+      <span class="nono" onclick="nona()" id="vazio"></span>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

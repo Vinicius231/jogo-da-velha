@@ -1,0 +1,142 @@
+:root {
+    --bordar-black: 1px solid black;
+  }
+  
+  body {
+    background: gray;
+    margin: 0;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+  }
+  .cima {
+    margin-top: 20px;
+  }
+  span {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+  }
+  .primeiro {
+    border: var(--bordar-black);
+    border-left: none;
+    border-top: none;
+  }
+  .segundo {
+    border: var(--bordar-black);
+    border-top: none;
+  }
+  .terceiro {
+    border: var(--bordar-black);
+    border-top: none;
+    border-right: none;
+  }
+  .quarto {
+    border: var(--bordar-black);
+    border-left: none;
+  }
+  .quinto {
+    border: var(--bordar-black);
+  }
+  .sexto {
+    border: var(--bordar-black);
+    border-right: none;
+  }
+  .setimo {
+    border: var(--bordar-black);
+    border-bottom: none;
+    border-left: none;
+  }
+  .oitavo {
+    border: var(--bordar-black);
+    border-bottom: none;
+  }
+  .nono {
+    border: var(--bordar-black);
+    border-right: none;
+    border-bottom: none;
+  }
+  .cruz1 {
+    width: 150px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    transform: rotate(45deg);
+    margin-top: 70px;
+  }
+  .cruz2 {
+    width: 150px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    transform: rotate(-45deg);
+  }
+  .circulo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin: auto;
+    margin-top: 5px;
+  }
+  .fundo {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.685);
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .menu {
+    max-width: 450px;
+    min-width: 200px;
+    height: 500px;
+    background: white;
+    margin: auto;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+    border: 5px solid rgb(126, 126, 126);
+  }
+  .classificacao {
+    font-size: 35pt;
+  }
+  .recomecar {
+    width: 170px;
+    height: 70px;
+    border-radius: 20px;
+    margin-top: 30%;
+    cursor: pointer;
+    font: bolder 13pt Arial;
+  }
+  .recomecar:hover {
+    width: 180px;
+    height: 80px;
+    background: rgba(128, 128, 128, 0.26);
+    transition: 0.5s;
+  }
+  
+  @media (max-width: 463px) {
+    body {
+      background: white;
+    }
+    span {
+      width: 70px;
+      height: 70px;
+    }
+    .circulo {
+      width: 50px;
+      height: 50px;
+    }
+    .cruz1 {
+      width: 50px;
+      height: 5px;
+      margin-top: 30px;
+      margin-left: 10px;
+      transform: rotate(120deg);
+    }
+    .cruz2 {
+      width: 50px;
+      height: 5px;
+      margin-left: 9px;
+      transform: rotate(60deg);
+    }
+  }
